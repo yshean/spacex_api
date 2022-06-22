@@ -7,10 +7,12 @@ part 'crew_member.freezed.dart';
 // but if CrewMember was not serialisable, we could skip it.
 part 'crew_member.g.dart';
 
+/// {@template crew_member}
 /// A model containing data about a SpaceX crew member
+/// {@endtemplate}
 @freezed
 class CrewMember with _$CrewMember {
-  // ignore: public_member_api_docs
+  /// {@macro crew_member}
   const factory CrewMember({
     /// The crew member's id
     required String id,

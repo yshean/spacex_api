@@ -8,10 +8,12 @@ part 'rocket.freezed.dart';
 // we could skip it.
 part 'rocket.g.dart';
 
+/// {@template rocket}
 /// A model containing data about a SpaceX rocket.
+/// {@endtemplate}
 @freezed
 class Rocket with _$Rocket {
-  // ignore: public_member_api_docs
+  /// {@macro rocket}
   const factory Rocket({
     /// The ID of the rocket
     required String id,
@@ -77,10 +79,12 @@ class Rocket with _$Rocket {
   String toString() => 'Rocket($id, $name)';
 }
 
+/// {@template length}
 /// A model that represents a certain length in both meters and feet.
+/// {@endtemplate}
 @freezed
 class Length with _$Length {
-  // ignore: public_member_api_docs
+  /// {@macro length}
   const factory Length({
     /// The length in metric meters
     required double meters,
@@ -100,10 +104,12 @@ class Length with _$Length {
   String toString() => 'Length($meters m, $feet ft)';
 }
 
+/// {@template mass}
 /// A model containing data about a SpaceX rocket
+/// {@endtemplate}
 @freezed
 class Mass with _$Mass {
-  // ignore: public_member_api_docs
+  /// {@macro mass}
   const factory Mass({
     /// The mass in metric kilograms
     required double kg,
