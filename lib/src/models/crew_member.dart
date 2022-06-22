@@ -45,5 +45,5 @@ class CrewMember with _$CrewMember {
       _$CrewMemberFromJson(json);
 
   @override
-  String toString() => 'Crew Member($id, $name)';
+  String toString() => 'CrewMember($id, $name)';
 }

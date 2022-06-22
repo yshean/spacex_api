@@ -40,7 +40,7 @@ void main() {
           wikipedia: 'https://www.wikipedia.org/',
           launches: ['Launch 1', 'Launch 2'],
         ).toString(),
-        equals('Crew Member(1, Alejandro Ferrero)'),
+        equals('CrewMember(1, Alejandro Ferrero)'),
       );
     });
   });
